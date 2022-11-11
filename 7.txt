@@ -1,3 +1,5 @@
+#Install react & create class and function compo
+
 #App.js for functional and class components
 
 import './App.css';
