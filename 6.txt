@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body onload="myload()">
+<form action="/action_page.php" method="get">
+Enter your name:<input type="text" id="fname" onfocus="myFunction(this.id)" oninput="myFunc()" oninvalid="alert('You must enter name!')" name="fname" required><br>
+Enter your PRN:<input type="text" id="pname" onfocus="myFunction(this.id)" oninput="myFunc()" oninvalid="alert('You must enter PRN!');" prn="pname" required><br>
+<button id="myBtn"onclick="mysub()">Submit</button>
+</form>
+<p id="demo"></p>
+<p id="focus"></p>
+<p id="focus1"></p>
+<script>
+function myFunction(x) {
+document.getElementById(x).style.background = "yellow";
+}
+function myFunc() {
+var x = document.getElementById("fname").value;
+var y = document.getElementById("pname").value;
+document.getElementById("focus").innerHTML = "Your name: " + x;
+document.getElementById("focus1").innerHTML = "Your PRN: " + y;
+}
+function mysub() {
+alert("The formissubmitted");
+}
+function mywheel() {
+document.getElementById("myDIV").style.fontSize = "35px";
+}
+function myload() {
+alert("Welcome to this Page");
+}
+</script>
+</body>
+</html>
+
+
+Expt 10 : Last Line
+fs.unlinkSync('${dirpath}/sample.txt')

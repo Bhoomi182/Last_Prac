@@ -1,0 +1,49 @@
+<!Doctype HTML>
+<html>
+<head>
+<title>Navigation Tag</title>
+<style type=text/css>
+body{
+height: 125vh;
+margin-top: 80px;
+padding: 30px;
+font-family: sans-serif;
+}
+header{
+background-color: lightpink;
+position: fixed;
+left: 0;
+right: 0;
+top: 5px;
+height: 20px;
+display: flex;
+align-items: center;
+box-shadow: 0 0 25px 0;
+}
+header *{
+display: inline;  
+}
+header li{
+margin: 30px;
+}
+header li a{
+text-decoration: none;
+color: blue;
+}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href='#'>Home</a></li>
+<li><a href='#'>About</a></li>
+<li><a href='#'>Contact</a></li>
+<li><a href='#'>Services</a></li>
+<li><a href='#'>Join Us</a></li>
+</ul>
+</nav>
+</header>
+Welcome to Navigation Tag Page
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<body>
+<script>
+functionvalidateform(){
+varname=document.myform.name.value;
+varpassword=document.myform.password.value;
+varsecondpassword=document.myform.password2.value;
+if(name==null||name==""){
+alert("Please enter your Name!");
+returnfalse;
+}
+elseif(password.length<6){
+alert("Password must be at least 6 characters long.");
+returnfalse;
+}
+if(password==secondpassword){
+returntrue;
+}
+else{
+alert("Password must be same!");
+returnfalse;
+}
+}
+</script>
+<body>
+<form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp"onsubmit="returnvalidateform()">
+Name:<input type="text"name="name"><br/>
+Password:<input type="password"name="password"><br/>
+Re-enterPassword:<input type="password"name="password2"/><br/>
+<input type="submit"value="Register">
+</form>
+</body>
+</html>
